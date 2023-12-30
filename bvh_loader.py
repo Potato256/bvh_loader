@@ -186,7 +186,7 @@ def update(frameNum, root, myFile):
   root.draw(Point())
 
 print(os.getcwd())  
-bvhFile = 'data/bollywood.bvh'
+bvhFile = 'data/crawling.bvh'
 str = ''
 root = Point()
 
@@ -223,5 +223,4 @@ with open(bvhFile, 'r') as myFile:
   line_ani.save(bvhFile.partition('/')[2].partition('.')[0]+'.gif'
         , writer='imagemagick', fps=0.2/frame_time)
 
-  plt.show()
   
